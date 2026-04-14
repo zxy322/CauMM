@@ -1,6 +1,6 @@
 # Causal Invariant Representation Learning for Detecting and Localizing Multimodal Media Manipulation
 
-![Intro](figs/intro.jpg)
+![Intro](figs/intro.pdf)
 
 The official repo for **CauMM**, a Causal Invariant Representation Learning framework for Detecting and Localizing Multimodal Media Manipulation.
 Full paper can be found at: [arXiv:xxxx.xxxxx](https://arxiv.org/pdf/xxxx).
