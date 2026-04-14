@@ -45,7 +45,7 @@ from scipy.interpolate import interp1d
 from models import box_ops
 from tools.multilabel_metrics import AveragePrecisionMeter, get_multi_label
 
-from models.fusionnoise2 import HAMMER
+from models.fusion import CauMM
 
 
 def setlogger(log_file):
@@ -305,9 +305,9 @@ def main_worker(gpu, args, config):
         "/home/async/data-disk/zxy/deepfake/bert-base-uncased/uncased_L-12_H-768_A-12")
 
     if args.log:
-        print(f"Creating HAMMER")
+        print(f"Creating CauMM")
 
-    model = HAMMER(args=args, config=config, text_encoder=args.text_encoder, tokenizer=tokenizer, init_deit=True)
+    model = CauMM(args=args, config=config, text_encoder=args.text_encoder, tokenizer=tokenizer, init_deit=True)
     model = model.to(device)
 
     checkpoint_dir = f'{args.log_num}/checkpoint_{args.test_epoch}.pth'

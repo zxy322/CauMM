@@ -43,7 +43,7 @@ from scipy.interpolate import interp1d
 
 from models import box_ops
 from tools.multilabel_metrics import AveragePrecisionMeter, get_multi_label
-from models.fusionnoise2 import HAMMER
+from models.fusion import CauMM
 
 
 def setlogger(log_file):
@@ -423,8 +423,8 @@ def main_worker(gpu, args, config):
 
     #### Model ####
     if args.log:
-        print(f"Creating HAMMER")
-    model = HAMMER(args=args, config=config, text_encoder=args.text_encoder, tokenizer=tokenizer, init_deit=True)
+        print(f"Creating CauMM")
+    model = CauMM(args=args, config=config, text_encoder=args.text_encoder, tokenizer=tokenizer, init_deit=True)
     model = model.to(device)
 
     arg_opt = utils.AttrDict(config['optimizer'])

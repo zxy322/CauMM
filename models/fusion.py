@@ -15,7 +15,7 @@ from tools.multilabel_metrics import get_multi_label
 from timm.models.layers import trunc_normal_
 
 
-class HAMMER(nn.Module):
+class CauMM(nn.Module):
     def __init__(self,
                  args=None,
                  config=None,
