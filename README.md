@@ -46,18 +46,17 @@ conda install --yes -c pytorch pytorch=1.10.0 torchvision==0.11.1 cudatoolkit=11
 pip install -r requirements.txt
 ```
 
-## Citation
+## 📝 Citation
 Welcome to star our repo and cite our work:
 ```
-@inproceedings{
-  zhou2025mitigating,
-  title={Mitigating Modality Prior-Induced Hallucinations in Multimodal Large Language Models via Deciphering Attention Causality},
-  author={Guanyu Zhou and Yibo Yan and Xin Zou and Kun Wang and Aiwei Liu and Xuming Hu},
-  booktitle={The Thirteenth International Conference on Learning Representations},
-  year={2025}
+@article{CauMM2026,
+  title={Causal Invariant Representation Learning for Detecting and Localizing Multimodal Media Manipulation},
+  author={Your Name and Co-author1 and Co-author2},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2026}
 }
 ```
 
-## Acknowledgement
+## 🙏 Acknowledgement
 We sincerely thank the authors of [MultiModal-DeepFake](https://github.com/rshaojimmy/MultiModal-DeepFake) for their excellent work.  
 We heavily used the code from their repository in developing this project.
